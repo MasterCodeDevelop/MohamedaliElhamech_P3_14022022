@@ -1,8 +1,9 @@
 /*==================== abstracts ====================*/
+@import "./abstracts/fonts";
 @import "./abstracts/variables";
+@import "./abstracts/mixins";
 
 /*==================== base ====================*/
-@import './base/fonts';
 @import './base/reset';
 
 /*==================== layout ====================*/
@@ -14,3 +15,5 @@
 
 /*==================== components ====================*/
 @import "./components/buttons";
+@import "./components/card";
+@import "./components/like";
