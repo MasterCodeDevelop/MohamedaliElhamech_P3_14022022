@@ -3,4 +3,19 @@
     position: relative;
     display: flex;
     flex-direction: column;
+
+    /*===== LOCATION =====*/
+    .location {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        height: 50px;
+        background-color: #eaeaea;
+        &__text {
+            font-weight: bold;
+            opacity: 1;
+        }
+    }
+    
 }
