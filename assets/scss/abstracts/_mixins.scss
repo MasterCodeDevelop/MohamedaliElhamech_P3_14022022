@@ -1,6 +1,6 @@
 /*==================== MIXINS ====================*/
 
-/*===== DESKTOP =====*/
+//===== DESKTOP =====
 @media screen and (min-width: $desktop-min-width) {
     .card {
         width: calc( (100vw / 4) - 25px ) !important;
