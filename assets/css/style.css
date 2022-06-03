@@ -12,6 +12,14 @@
   .operating-steps .section__content, .restaurants .section__content {
     flex-direction: row;
   }
+
+  .form__list {
+    flex-direction: row !important;
+  }
+
+  .form__item {
+    flex: 1;
+  }
 }
 /*==================== base ====================*/
 /*==================== BASE ====================*/
@@ -349,6 +357,149 @@ a {
   opacity: 0.8;
 }
 
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  margin-top: -45px;
+  width: 100%;
+  background-color: #f6f6f6;
+  padding: 32px 14px;
+  border-radius: 40px 40px 0 0;
+}
+.form__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Shrikhand", sans-serif;
+  margin-left: 5px;
+  margin-right: 20px;
+}
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.form__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.form__list__title {
+  position: relative;
+  margin-bottom: 6px;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 5px;
+  animation: menu-item 1s ease-out forwards;
+}
+.form__list__title::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  height: 3px;
+  width: 50px;
+  background-color: #99e2d0;
+}
+.form__item {
+  position: relative;
+  display: flex;
+  border-radius: 20px;
+  list-style: none;
+  border: inherit;
+  overflow: hidden;
+  box-shadow: 0 0 16px 1px rgba(119, 119, 119, 0.3);
+  animation: menu-item 1s ease-out forwards;
+  opacity: 0;
+}
+.form__item:nth-child(1) {
+  animation-delay: 300ms;
+}
+.form__item:nth-child(2) {
+  animation-delay: 600ms;
+}
+.form__item:nth-child(3) {
+  animation-delay: 900ms;
+}
+.form__item:nth-child(4) {
+  animation-delay: 1200ms;
+}
+.form__label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  background-color: #fff;
+  border: inherit;
+  transition: width 0.5s;
+}
+.form__label__title {
+  font-weight: 700;
+}
+.form__label span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: calc(100% - 50px);
+}
+.form__label strong {
+  right: 16px;
+  position: absolute;
+  font-weight: 600;
+}
+.form .check-animated {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #99e2d0;
+  width: 100px;
+}
+.form .check-animated i {
+  position: absolute;
+  z-index: 2;
+  font-size: 30px;
+  top: 20px;
+  right: -60px;
+  color: #fff;
+  transition: transform 0.5s;
+}
+.form input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.form input:checked ~ label {
+  width: calc(100% - 70px);
+}
+.form input:checked ~ span i {
+  transform: translateX(-80px) rotate(-360deg);
+}
+.form .btn {
+  padding: 0 45px;
+  margin-bottom: 30px;
+}
+
+@keyframes menu-item {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  90% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 i.like {
   display: flex;
   justify-content: center;
