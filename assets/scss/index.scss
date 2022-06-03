@@ -1,9 +1,12 @@
+/*==================== abstracts ====================*/
+@import "./abstracts/variables";
+
 /*==================== base ====================*/
 @import './base/fonts';
-@import './base/base';
+@import './base/reset';
 
-/*==================== utils ====================*/
-@import "./utils/variables";
+/*==================== layout ====================*/
+@import "./layout/header";
 
-/*==================== layouts ====================*/
-@import "./layouts/header";
+/*==================== home ====================*/
+@import "./pages/home";

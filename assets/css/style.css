@@ -1,3 +1,4 @@
+/*==================== abstracts ====================*/
 /*==================== base ====================*/
 /*==================== FONTS ====================*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
@@ -13,8 +14,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/*==================== utils ====================*/
-/*==================== layouts ====================*/
+/*==================== layout ====================*/
 /*==================== HEADER ====================*/
 .header {
   position: relative;
@@ -28,6 +28,14 @@ body {
 }
 .header__title {
   font-family: "Shrikhand", sans-serif;
+}
+
+/*==================== home ====================*/
+/*==================== HOME ====================*/
+.home {
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */
