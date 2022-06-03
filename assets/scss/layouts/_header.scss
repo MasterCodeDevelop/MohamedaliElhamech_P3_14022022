@@ -1,5 +1,5 @@
-//==========[ header ]==========
-header {
+/*==================== HEADER ====================*/
+.header {
     position: relative;
     display: flex;
     height: 62px;
@@ -8,17 +8,7 @@ header {
     z-index: 1;
     background-color: #fff;
     box-shadow: 0px 2px 5px #d0d0d0;
-    .back {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex: 1;
-        left: 0;
-        width: 70px;
-        height: 100%;
-        i {
-            font-weight: 900;
-        }
+    &__title {
+        font-family: "Shrikhand",sans-serif;
     }
 }
