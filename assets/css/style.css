@@ -231,6 +231,20 @@ a {
   font-weight: 600;
 }
 
+/*==================== MENU ====================*/
+.menu {
+  /*===== BACKGROUND =====*/
+}
+.menu__background {
+  height: 255px;
+  width: 100%;
+}
+.menu__background img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .section {
   display: flex;
   flex-direction: column;
