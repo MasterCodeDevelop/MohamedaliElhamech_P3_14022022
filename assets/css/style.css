@@ -219,6 +219,12 @@ a {
   display: flex;
   justify-content: space-between;
 }
+.card__text {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
 i.like {
   display: flex;
   justify-content: center;
