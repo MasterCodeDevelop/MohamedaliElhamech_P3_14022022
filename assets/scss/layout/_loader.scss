@@ -3,10 +3,11 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    animation: loader 6s linear;
+    animation: loader 3s linear;
 
     &__spinner {
-        animation: rotate 6s linear ;
+        animation: rotate 3s linear ;
+        z-index: 1000;
         z-index: 2;
         position: absolute;
         top: 50%;
@@ -17,7 +18,7 @@
     }
     &__dash {
         stroke-linecap: round;
-        animation: dash 1s linear 6;
+        animation: dash 1s linear 3;
     }
 }
   
@@ -27,6 +28,7 @@
         background-color: rgba(0, 0, 0, 0.8);
     }
     99% {
+        z-index: 1000;
         background-color: rgba(0, 0, 0, 0.2);
     }
     100% {
